@@ -228,7 +228,7 @@ button {
 .short-description .short-description__right {
   width: 50%;
   height: 100%;
-  background-image: url(./docs/assets/room.png);
+  background-image: url(./assets/room.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -334,7 +334,7 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 50px;
-  background-image: url(./docs/assets/trapezoid.png);
+  background-image: url(./assets/trapezoid.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
