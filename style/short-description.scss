@@ -1,0 +1,94 @@
+.short-description {
+  position: relative;
+
+  height: 533px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-white-dirt);
+
+
+
+  .short-description__left {
+    width: 50%;
+    height: 100%;
+
+    @media screen and (max-width: 750px) {
+      position: relative;
+
+      height: 261px;
+    }
+  }
+
+  .short-description__description {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+
+    width: 1140px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1, p {
+      padding: 10px var(--side-padding);
+
+      max-width: 416px;
+
+      font-family: PT Sans Caption, sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+
+      color: var(--color-dark);
+    }
+    p {
+      max-width: 367px;
+
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 100%;
+
+      h1 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .short-description__right {
+    width: 50%;
+    height: 100%;
+
+    @media screen and (max-width: 750px){
+      height: 288px;
+    }
+
+    background-image: url("../assets/room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 750px){
+    flex-direction: column-reverse;
+
+    height: auto;
+
+    .short-description__left,
+    .short-description__right {
+      width: 100%;
+    }
+  }
+}
+

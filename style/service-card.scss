@@ -1,0 +1,218 @@
+.service-card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+
+  .service-card__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60%;
+    height: 100%;
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-left: 50px;
+
+    @media screen and (max-width: 750px) {
+      position: relative;
+      width: auto;
+      padding-left: 20px;
+      padding-bottom: 30px;
+    }
+
+    background-image: url("../assets/trapezoid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .service-card__title {
+      font-family: PT Sans Caption, sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+
+      color: var(--color-dark);
+
+      margin-top: 40px;
+      margin-bottom: 15px;
+
+      h5 {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 750px) {
+        margin-top: 20px;
+
+        font-weight: 700;
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .service-card__services-list {
+      padding-left: 10px;
+
+      li {
+        position: relative;
+
+        list-style: none;
+
+        font-family: PT Sans Caption, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-dark);
+
+        margin-bottom: 7px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+
+          transform: translate(-15px, -50%);
+
+          width: 7px;
+          height: 7px;
+
+          border-radius: 50%;
+
+          z-index: 2;
+
+          background: var(--color-green-m);
+        }
+
+
+      }
+
+      @media screen and (max-width: 750px) {
+        padding-left: 12px;
+
+        li {
+          max-width: 270px;
+
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .service-card__price {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      font-family: PT Sans Caption, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+
+      color: var(--color-dark);
+
+      margin-top: 25px;
+
+      p[data-old-price] {
+        font-size: 16px;
+        color: var(--color-gray);
+
+        text-decoration: line-through;
+      }
+
+      @media screen and (max-width: 750px) {
+        margin-top: 10px;
+
+        font-size: 18px;
+
+        p[data-old-price] {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .service-card__buttons {
+      margin-top: 30px;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      @media screen and (max-width: 750px){
+        gap: 10px;
+      }
+    }
+  }
+
+  .service-card__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media screen and (max-width: 750px) {
+      position: relative;
+
+      height: 169px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+.service-card__btn {
+  width: 196px;
+  height: 43px;
+
+  font-family: PT Sans Caption, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  border-radius: 50px;
+
+  transition: all .3s ease-in-out;
+
+  @media screen and (max-width: 750px){
+    width: 137px;
+    height: 43px;
+  }
+}
+
+.service-card__button_sub {
+  color: #fff;
+  background: var(--color-green-l);
+
+
+  &:hover {
+    background: #00D29F;
+  }
+}
+
+.service-card__button_more {
+  color: var(--color-green-l);
+  border: 1px solid var(--color-green-l);
+
+  &:hover {
+    color: #fff;
+    background: var(--color-green-l);
+  }
+}
