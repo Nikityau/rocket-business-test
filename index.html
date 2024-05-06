@@ -23,7 +23,7 @@
                 <a href="#">Контакты</a>
             </div>
         </nav>
-        <button class="service-card__btn mobile-navigation__sing-up">
+        <button data-form-btn-a class="service-card__btn mobile-navigation__sing-up">
             Записаться на прием
         </button>
     </div>
@@ -57,7 +57,7 @@
                     </p>
                 </div>
             </div>
-            <button class="service-card__btn service-card__button_sub">
+            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                 Записаться на прием
             </button>
         </div>
@@ -106,7 +106,7 @@
                             <p data-old-price>3500₽</p>
                         </div>
                         <div class="service-card__buttons">
-                            <button class="service-card__btn service-card__button_sub">
+                            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                                 Записаться
                             </button>
                             <button class="service-card__btn service-card__button_more">
@@ -140,7 +140,7 @@
                             <p data-old-price>5000₽</p>
                         </div>
                         <div class="service-card__buttons">
-                            <button class="service-card__btn service-card__button_sub">
+                            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                                 Записаться
                             </button>
                             <button class="service-card__btn service-card__button_more">
@@ -174,7 +174,7 @@
                             <p data-old-price> 20000₽</p>
                         </div>
                         <div class="service-card__buttons">
-                            <button class="service-card__btn service-card__button_sub">
+                            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                                 Записаться
                             </button>
                             <button class="service-card__btn service-card__button_more">
@@ -208,7 +208,7 @@
                             <p data-old-price>0₽</p>
                         </div>
                         <div class="service-card__buttons">
-                            <button class="service-card__btn service-card__button_sub">
+                            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                                 Записаться
                             </button>
                             <button class="service-card__btn service-card__button_more">
@@ -242,7 +242,7 @@
                             <p data-old-price>0₽</p>
                         </div>
                         <div class="service-card__buttons">
-                            <button class="service-card__btn service-card__button_sub">
+                            <button data-form-btn-a class="service-card__btn service-card__button_sub">
                                 Записаться
                             </button>
                             <button class="service-card__btn service-card__button_more">
@@ -303,5 +303,29 @@
         </div>
     </div>
 </footer>
+<div class="form">
+    <form method="POST" action="https://youtube.com">
+        <div class="form__wrapper">
+            <label class="" for="fio">ФИО</label>
+            <input id="fio" type="text"/>
+        </div>
+        <div class="form__wrapper">
+            <label for="email">Email</label>
+            <input id="email" type="text"/>
+        </div>
+        <div class="form__wrapper">
+            <label for="direction">Направление</label>
+            <input id="direction" type="text"/>
+        </div>
+        <div class="form__btn-wrapper">
+            <button data-form-submit-btn type="submit" class="service-card__btn service-card__button_sub">
+                Отправить
+            </button>
+            <button data-form-cancel-btn class="service-card__btn service-card__button_more">
+                Отмена
+            </button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
